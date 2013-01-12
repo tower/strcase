@@ -17,7 +17,7 @@ Browser:
 ## Usage
 
 ``` javascript
-var tcase = require('tcase')
+var tcase = require('t-case')
   , cases = [
       'fooBar'
     , 'foo_bar'
