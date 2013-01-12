@@ -5,7 +5,7 @@
 Node:
 
 ```
-npm install tcase
+npm install t-case
 ```
 
 Browser:
