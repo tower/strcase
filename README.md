@@ -11,7 +11,7 @@ npm install tcase
 Browser:
 
 ``` html
-<script src="http://raw.github.com/viatropos/tcase/tree/master/index.js"></script>
+<script src="https://raw.github.com/viatropos/tcase/master/index.js"></script>
 ```
 
 ## Usage
