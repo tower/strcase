@@ -1,23 +1,23 @@
-# tcase
+# incase
 
 ## Install
 
 Node:
 
 ```
-npm install t-case
+npm install incase
 ```
 
 Browser:
 
 ``` html
-<script src="https://raw.github.com/viatropos/tcase/master/index.js"></script>
+<script src="https://raw.github.com/viatropos/incase/master/index.js"></script>
 ```
 
 ## Usage
 
 ``` javascript
-var tcase = require('t-case')
+var incase = require('incase')
   , cases = [
       'fooBar'
     , 'foo_bar'
@@ -31,23 +31,23 @@ var tcase = require('t-case')
   ]
 
 cases.forEach(function(string) {
-  tcase.camelCase(string)      // "fooBar"
-  tcase.snakeCase(string)      // "foo_bar"
-  tcase.constantCase(string)   // "FOO_BAR"
-  tcase.classCase(string)      // "FooBar"
-  tcase.namespaceCase(string)  // "Foo.Bar"
-  tcase.titleCase(string)      // "Foo Bar"
-  tcase.paramCase(string)      // "foo-bar"
-  tcase.pathCase(string)       // "foo/bar"
-  tcase.dotCase(string)        // "foo.bar"
+  incase.camelCase(string)      // "fooBar"
+  incase.snakeCase(string)      // "foo_bar"
+  incase.constantCase(string)   // "FOO_BAR"
+  incase.classCase(string)      // "FooBar"
+  incase.namespaceCase(string)  // "Foo.Bar"
+  incase.titleCase(string)      // "Foo Bar"
+  incase.paramCase(string)      // "foo-bar"
+  incase.pathCase(string)       // "foo/bar"
+  incase.dotCase(string)        // "foo.bar"
 });
 ```
 
 ## Contribute
 
 ```
-git clone git://github.com/viatropos/tcase.git
-cd tcase
+git clone git://github.com/viatropos/incase.git
+cd incase
 npm install
 ```
 

@@ -1,4 +1,4 @@
-var tcase = require('../index')
+var incase = require('..')
   , assert = require('chai').assert;
 
 suite('serverTest', function() {
@@ -16,7 +16,7 @@ suite('serverTest', function() {
 
   function testStringCase(type, initialValue, expectedValue) {
     test(type + '("' + initialValue + '") == ' + expectedValue, function() {
-      assert.equal(tcase[type](initialValue), expectedValue);
+      assert.equal(incase[type](initialValue), expectedValue);
     });
   }
 
@@ -37,8 +37,8 @@ suite('serverTest', function() {
   testStringCases('dotCase', 'foo.bar');
 
   test('non code characters', function() {
-    assert.equal(tcase.camelCase('Node.js!'), 'nodeJs');
-    assert.equal(tcase.camelCase('asdf asdf ^#! asdf'), 'asdfAsdfAsdf');
-    assert.equal(tcase.namespaceCase('asdf asdf ^#! asdf'), 'Asdf.Asdf.Asdf');
+    assert.equal(incase.camelCase('Node.js!'), 'nodeJs');
+    assert.equal(incase.camelCase('asdf asdf ^#! asdf'), 'asdfAsdfAsdf');
+    assert.equal(incase.namespaceCase('asdf asdf ^#! asdf'), 'Asdf.Asdf.Asdf');
   });
 });

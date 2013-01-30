@@ -1,4 +1,4 @@
-var exports = typeof exports === 'undefined' ? (window.tcase = {}) : exports;
+var exports = typeof exports === 'undefined' ? (window.incase = {}) : exports;
 
 /**
  * "dot.case"
