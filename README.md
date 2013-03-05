@@ -5,19 +5,19 @@
 Node:
 
 ```
-npm install incase
+npm install tower-strcase
 ```
 
 Browser:
 
 ``` html
-<script src="https://raw.github.com/viatropos/incase/master/index.js"></script>
+component install tower/strcase
 ```
 
 ## Usage
 
 ``` javascript
-var incase = require('incase')
+var strcase = require('tower-strcase')
   , cases = [
       'fooBar'
     , 'foo_bar'
@@ -31,55 +31,24 @@ var incase = require('incase')
   ]
 
 cases.forEach(function(string) {
-  incase.camelCase(string)      // "fooBar"
-  incase.snakeCase(string)      // "foo_bar"
-  incase.constantCase(string)   // "FOO_BAR"
-  incase.classCase(string)      // "FooBar"
-  incase.namespaceCase(string)  // "Foo.Bar"
-  incase.titleCase(string)      // "Foo Bar"
-  incase.paramCase(string)      // "foo-bar"
-  incase.pathCase(string)       // "foo/bar"
-  incase.dotCase(string)        // "foo.bar"
+  strcase.camelCase(string)      // "fooBar"
+  strcase.snakeCase(string)      // "foo_bar"
+  strcase.constantCase(string)   // "FOO_BAR"
+  strcase.classCase(string)      // "FooBar"
+  strcase.namespaceCase(string)  // "Foo.Bar"
+  strcase.titleCase(string)      // "Foo Bar"
+  strcase.paramCase(string)      // "foo-bar"
+  strcase.pathCase(string)       // "foo/bar"
+  strcase.dotCase(string)        // "foo.bar"
 });
-```
-
-## Contribute
-
-```
-git clone git://github.com/viatropos/incase.git
-cd incase
-npm install
 ```
 
 ### Test
 
-Requires `mocha`, `chai`, and `phantomjs`:
-
 ```
-brew install phantomjs
-npm install mocha -g
-npm install phantomjs chai
+mocha
 ```
 
-## MIT License
+## License
 
-Copyright &copy; 2013 [Lance Pollard](http://twitter.com/viatropos) <lancejpollard@gmail.com>
- 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT
