@@ -1,4 +1,6 @@
-# incase
+# Tower String Case
+
+Convert strings to `camelCase`, `snake_case`, `CONSTANT_CASE`, and other useful code-cases.
 
 ## Install
 
