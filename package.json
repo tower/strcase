@@ -2,9 +2,5 @@
   "name": "tower-strcase",
   "version": "0.1.0",
   "main": "./index.js",
-  "author": "Lance Pollard <lancejpollard@gmail.com>",
-  "devDependencies": {
-    "chai": "~1.4.2",
-    "mocha": "~1.8.1"
-  }
+  "author": "Lance Pollard <lancejpollard@gmail.com>"
 }

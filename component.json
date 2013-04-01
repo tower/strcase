@@ -6,10 +6,6 @@
   "keywords": [
 
   ],
-  "dependencies": {
-  },
-  "development": {
-  },
   "scripts": [
     "index.js"
   ],

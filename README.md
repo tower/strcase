@@ -1,16 +1,16 @@
 # Tower String Case
 
-Convert strings to `camelCase`, `snake_case`, `CONSTANT_CASE`, and other useful code-cases.
+Convert strings to `camelCase`, `snake_case`, `CONSTANT_CASE`, and other useful code-cases. **< 0.4kb** minified and gzipped.
 
 ## Install
 
-Node:
+node:
 
 ```
 npm install tower-strcase
 ```
 
-Browser:
+browser:
 
 ``` html
 component install tower/strcase
