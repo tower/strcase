@@ -2,10 +2,8 @@
   "name": "strcase",
   "repo": "tower/strcase",
   "description": "Tower String case component",
-  "version": "0.1.0pre",
-  "keywords": [
-
-  ],
+  "version": "0.1.0",
+  "keywords": [],
   "scripts": [
     "index.js"
   ],

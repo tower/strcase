@@ -1,5 +1,9 @@
 {
   "name": "tower-strcase",
-  "version": "0.1.0pre",
-  "main": "./index.js"
+  "version": "0.1.0",
+  "main": "./index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/tower/strcase.git"
+  }
 }
