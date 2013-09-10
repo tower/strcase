@@ -10,10 +10,16 @@ node:
 npm install tower-strcase
 ```
 
-bower:
+broswer:
 
 ``` html
 component install tower/strcase
+```
+
+bower:
+
+```
+need to create
 ```
 
 ## Usage
