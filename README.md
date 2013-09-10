@@ -10,7 +10,7 @@ node:
 npm install tower-strcase
 ```
 
-broswer:
+browser:
 
 ``` html
 component install tower/strcase
