@@ -19,7 +19,7 @@ component install tower/strcase
 bower:
 
 ```
-need to create
+bower install strcase
 ```
 
 ## Usage
