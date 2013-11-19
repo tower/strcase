@@ -1,0 +1,29 @@
+{
+  "name": "strcase",
+  "main": "index.js",
+  "version": "0.5.1",
+  "homepage": "https://github.com/tower/strcase",
+  "authors": [
+    "Lance Pollard lancejpollard@gmail.com"
+  ],
+  "description": "Convert strings to camelCase, snake_case, CONSTANT_CASE, and other useful code-cases.",
+  "keywords": [
+    "case",
+    "converter",
+    "camelcase",
+    "camel",
+    "upper",
+    "lower",
+    "snake",
+    "title",
+    "constant"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

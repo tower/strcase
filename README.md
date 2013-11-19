@@ -16,6 +16,12 @@ browser:
 component install tower/strcase
 ```
 
+bower:
+
+```
+bower install strcase
+```
+
 ## Usage
 
 ``` javascript
