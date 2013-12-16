@@ -6,7 +6,7 @@ var packageJson = grunt.file.readJSON("package.json"),
     minified = "dist/strcase.min.js",
     packageDirName = "strcase-" + packageJson.version,
     packageDir = "dist/" + packageDirName + "/",
-    releaseRoot = "dist/",
+    releaseRoot = "./",
     sources = [
       'index.js'
     ];
@@ -43,7 +43,6 @@ grunt.initConfig({
       dist: {
         files: {
           './dist/strcase.js': ['index.js']
-          //'build/module.js': ['client/scripts/**/*.js', 'client/scripts/**/*.coffee'],
         },
         options: {
           standalone: 'strcase'
