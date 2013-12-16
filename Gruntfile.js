@@ -37,19 +37,20 @@ grunt.initConfig({
     jshint: {
         options: {
             jshintrc: '.jshintrc'
-        },
-        beforeconcat: sources,
-        afterconcat: [ distribution ]
+        }
     },
     browserify: {
       dist: {
         files: {
-          './dist/strcase.js': ['index.js',],
+          './dist/strcase.js': ['index.js']
           //'build/module.js': ['client/scripts/**/*.js', 'client/scripts/**/*.coffee'],
-        }/*,
+        },
         options: {
+          standalone: 'strcase'
+           /*
           transform: ['coffeeify']
-        }//*/
+           //*/
+        }
       }
     },
     "git-describe": {
@@ -72,7 +73,7 @@ grunt.initConfig({
   grunt.registerTask('cb', ['browserify']);
 
   // build 
-  grunt.registerTask('build', ['clean:build', 'browserify', 'git-describe', 'jshint', 'uglify']);
+  grunt.registerTask('build', ['clean:build', 'browserify', 'git-describe', 'uglify']);
 
   // test
   //grunt.registerTask('test', ['build']);
