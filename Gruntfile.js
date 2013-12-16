@@ -2,11 +2,9 @@ module.exports = function(grunt) {
 
 // ----------
 var packageJson = grunt.file.readJSON("package.json"),
-    distribution = "dist/strcase.js",
-    minified = "dist/strcase.min.js",
-    packageDirName = "strcase-" + packageJson.version,
-    packageDir = "dist/" + packageDirName + "/",
-    releaseRoot = "./",
+    distDir = "dist/",
+    distribution = distDir + "strcase.js",
+    minified = distDir + "strcase.min.js",
     sources = [
       'index.js'
     ];
@@ -16,33 +14,21 @@ var packageJson = grunt.file.readJSON("package.json"),
 grunt.initConfig({
     pkg: packageJson,
     clean: {
-        build: ["build"],
-        package: [packageDir],
-        release: {
-            src: [releaseRoot],
-            options: {
-                force: true
-            }
-        }
+        dist: ["distPackageDir"]
     },
     uglify: {
       options: {
         mangle: false
       },
-      pathvisiojs: {
+      strcase: {
           src: [ distribution ],
           dest: minified
       }
     },
-    jshint: {
-        options: {
-            jshintrc: '.jshintrc'
-        }
-    },
     browserify: {
       dist: {
         files: {
-          './dist/strcase.js': ['index.js']
+          'dist/strcase.js': sources
         },
         options: {
           standalone: 'strcase'
@@ -64,18 +50,11 @@ grunt.initConfig({
   // Load the plugin that provides the tasks.
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks("grunt-git-describe");
   grunt.loadNpmTasks('grunt-browserify');
 
   // build 
-  grunt.registerTask('cb', ['browserify']);
-
-  // build 
-  grunt.registerTask('build', ['clean:build', 'browserify', 'git-describe', 'uglify']);
-
-  // test
-  //grunt.registerTask('test', ['build']);
+  grunt.registerTask('build', ['clean:dist', 'browserify', 'git-describe', 'uglify']);
 
   // Default task(s).
   grunt.registerTask('default', ['build']);
