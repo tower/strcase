@@ -18,11 +18,7 @@ browser:
 component install tower/strcase
 ```
 
-or using minified file from Grunt build:
-
-``` html
-<script src="./dist/strcase.min.js" />
-```
+or use [Browserify](http://browserify.org/).
 
 ## Usage
 
