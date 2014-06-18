@@ -86,8 +86,6 @@ exports.paramCase = function(string) {
  */
 
 exports.separatorCase = function(string, separator) {
-  //return exports.clean(exports.trim(string), separator).replace(/([a-z\d])([A-Z]+)/g, '$1' + separator + '$2').replace(/[-\.\/\_\s]+/g, separator).toLowerCase();
-  //return exports.clean(exports.trim(string), separator).replace(/([a-z\d])([A-Z]+)/g, '$1' + separator + '$2').replace(/([A-Z](?=[A-Z]))/g, '$1' + separator).replace(/[-\.\/\_\s]+/g, separator).toLowerCase();
   return exports.clean(exports.trim(string), separator).replace(/([a-z\d])([A-Z]+)/g, '$1' + separator + '$2').replace(/(([A-Z])(?=[A-Z][a-z]))/g, '$1' + separator).replace(/(([a-z])(?=[A-Z][a-z]))/g, '$1' + separator).replace(/[-\.\/\_\s]+/g, separator).toLowerCase();
 }
 
